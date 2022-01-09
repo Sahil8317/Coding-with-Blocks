@@ -1,0 +1,24 @@
+.task-btn {
+  font-size: 22px
+}
+.main-div{
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   -moz-transform: translateX(-50%) translateY(-50%);
+   -webkit-transform: translateX(-50%) translateY(-50%);
+   transform: translateX(-50%) translateY(-50%);
+}
+.btn-task1{
+  margin-right: 20px;
+}
+.heading-style{
+  margin-top: 1px;
+  background-color:#9933FF;
+  color: #fff;
+  border-color: #ba50fd;
+  padding-top:16px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 0.3rem;
+}

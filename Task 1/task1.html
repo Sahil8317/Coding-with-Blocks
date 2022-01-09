@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 1</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="task1.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+       <!-- Google Fonts -->
+    <link  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- MDB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"  rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
+    </head>
+    <body>
+      <div class="heading-style">
+        <h4 style="font-size:23px; text-transform: uppercase;letter-spacing: 1px;"> Task 1 - Move the King ♕ to the END Cell</h4>
+      </div>
+      <div class="game-stimulation">
+        <table class="chess-board">
+            <tbody>
+                <tr>
+                    <td class="dark" ><div class="hide" id = "51">♕</div></td>
+                    <td class="light"><div class="hide" id = "52">♕</div></td>
+                    <td class="dark"><div class="hide" id = "53">♕</div></td>
+                    <td class="light" ><div class="hide" id = "54">♕</div></td>
+                    <td class="dark" ><div style="color:green; font-size:25px; font-weight:600;" id = "goal">End</div><div class="hide" id = "55">♕</div></td>
+                </tr>
+                <tr>
+
+                    <td class="light" ><div class="hide" id = "41">♕</div></td>
+                    <td class="dark" ><div class="hide" id = "42">♕</div></td>
+                    <td class="light" ><div class="hide" id = "43">♕</div></td>
+                    <td class="dark" ><div class="hide" id = "44">♕</div></td>
+                    <td class="light" ><div class="hide" id = "45">♕</div></td>
+
+                </tr>
+                <tr>
+
+                    <td class="dark" ><div class="hide" id = "31">♕</div> </td>
+                    <td class="light" ><div class="hide" id = "32">♕</div> </td>
+                    <td class="dark" ><div class="hide" id = "33">♕</div> </td>
+                    <td class="light" ><div class="hide" id = "34">♕</div> </td>
+                    <td class="dark" ><div class="hide" id = "35">♕</div> </td>
+
+                </tr>
+                <tr>
+                    <td class="light"> <div class="hide" id = "21"> ♕ </div> </td>
+                    <td class="dark"> <div class="hide" id = "22"> ♕ </div> </td>
+                    <td class="light"> <div class="hide" id = "23"> ♕ </div> </td>
+                    <td class="dark"> <div class="hide" id = "24"> ♕ </div> </td>
+                    <td class="light"> <div class="hide" id = "25"> ♕ </div> </td>
+
+                </tr>
+                <tr>
+
+                    <td class="dark"> <div id = "11">♕</div> </td>
+                    <td class="light"> <div class="hide" id = "12">♕</div> </td>
+                    <td class="dark"> <div class="hide" id = "13">♕</div> </td>
+                    <td class="light"> <div class="hide" id = "14">♕</div> </td>
+                    <td class="dark"> <div class="hide" id = "15">♕</div> </td>
+
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="blockly-Area" id = "blocklyArea">
+      <button class="btn btn-secondary btn-lg active task-btn" type="button" name="button" id = "run">Run Code</button>
+      <div id="blocklyDiv" style="height: 610px; width: 100%;"></div>
+      <xml id="toolbox" style="display:none">
+        <block type="start"> </block>
+        <block type="end"></block>
+        <block type="move_up"></block>
+        <block type="move_down"></block>
+        <block type="move_right"></block>
+        <block type="move_left"></block>
+      </xml>
+    </div>
+
+    </body>
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+    <script src = "task1_blocks.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src = "task1.js"> </script>
+
+
+</html>
