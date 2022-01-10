@@ -7,7 +7,6 @@ $('#run').click(function(){
     alert('Start or End blocks are not selected Please Try Again!');
      location.reload();
   }else{
-    //console.log(genArray[1]);
     var initPoint = 11;
     var resultArray = [];
     resultArray.push(initPoint);
