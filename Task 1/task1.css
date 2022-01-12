@@ -29,10 +29,13 @@
   text-align: center;
   border-radius: 0.3rem;
 }
-.task-btn{
-  margin-left: 88.5%;
+.runCode-btn{
+  margin-left: 7px;
   margin-bottom: 6px;
-  display: block;
+}
+.reload-btn{
+  margin-left: 77.5%;
+  margin-bottom: 6px;
 }
 .game-stimulation{
   margin-top: 68px;

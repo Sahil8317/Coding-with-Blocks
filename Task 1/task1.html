@@ -12,6 +12,22 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
     </head>
     <body>
+      <div id="updateModal" class="modal" role="dialog">
+      <div class="modal-dialog">
+      <div class="modal-content" style="border:green;">
+        <div class="modal-header">
+          <h4 class="modal-title">Solution</h4>
+          <button type="button" id="up-close-btn" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img src="../Images/task_1_solution.png" alt="Solution" style="width:100%">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-sm" id="low-close-btn" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
       <div class="heading-style">
         <h4 style="font-size:23px; text-transform: uppercase;letter-spacing: 1px;"> Task 1 - Move the King ♕ to the END Cell</h4>
       </div>
@@ -26,7 +42,6 @@
                     <td class="dark" ><div style="color:green; font-size:25px; font-weight:600;" id = "goal">End</div><div class="hide" id = "55">♕</div></td>
                 </tr>
                 <tr>
-
                     <td class="light" ><div class="hide" id = "41">♕</div></td>
                     <td class="dark" ><div class="hide" id = "42">♕</div></td>
                     <td class="light" ><div class="hide" id = "43">♕</div></td>
@@ -62,9 +77,13 @@
                 </tr>
             </tbody>
         </table>
+        <button class="btn btn-secondary btn-lg active" style="background-color:#4CBB17; letter-spacing: 1px; margin-top:10px;" type="button" name="button" id = "view_solution">View Solution</button>
       </div>
       <div class="blockly-Area" id = "blocklyArea">
-      <button class="btn btn-secondary btn-lg active task-btn" type="button" name="button" id = "run">Run Code</button>
+        <div>
+          <button class="btn btn-secondary btn-lg active reload-btn" type="button" name="button" id = "reload">Reload</button>
+          <button class="btn btn-secondary btn-lg active runCode-btn" type="button" name="button" id = "run">Run Code</button>
+        </div>
       <div id="blocklyDiv" style="height: 610px; width: 100%;"></div>
       <xml id="toolbox" style="display:none">
         <block type="start"> </block>

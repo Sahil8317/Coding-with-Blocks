@@ -76,6 +76,22 @@ $('#run').click(function(){
  location.reload();
 }
 
+$('#reload').click(function(){
+  location.reload();
+});
+
+$('#view_solution').click(function(){
+$('#updateModal').css('display','block');
+});
+
+$('#up-close-btn').click(function(){
+  $('#updateModal').css('display','none');
+});
+
+$('#low-close-btn').click(function(){
+  $('#updateModal').css('display','none');
+});
+
 
 var workspace = Blockly.inject('blocklyDiv', {
   toolbox: document.getElementById('toolbox'),
