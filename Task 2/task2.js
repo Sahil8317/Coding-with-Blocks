@@ -28,7 +28,6 @@ async function runSimulation(){
     return;
   }
   var codeArray = Generatedcode.split(",");
-  console.log(codeArray);
   if(codeArray.length!=3){
     alert("Blocks are not selected Properly Try Again!!");
     location.reload();
@@ -81,12 +80,10 @@ async function runSimulation(){
     y:initY
   });
 }
-
   if(loopCount<4){
     for(let i=0;i<4-loopCount;i++)
        vertices.pop();
   }
-  console.log(vertices);
   var points = calRoutePoints(vertices);
   animate(points,vertices);  // function for animation
 }
@@ -201,7 +198,6 @@ workspace.addChangeListener(function(event){
   }
   }
   if(event.type==Blockly.Events.BLOCK_DELETE){
-    console.log(event);
     let block = event.oldJson;
     let index = 0;
     if(block.type =="movement")
@@ -210,7 +206,6 @@ workspace.addChangeListener(function(event){
       index = 2;
     newToolBox.contents[index].disabled = "false";
     newToolBox.contents[index].enabled =true;
-    console.log(newToolBox);
     workspace.updateToolbox(newToolBox);
   }
 });

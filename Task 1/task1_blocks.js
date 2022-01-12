@@ -123,20 +123,17 @@ Blockly.defineBlocksWithJsonArray([
 ]);
 
 Blockly.JavaScript['start'] = function(block) {
-  // TODO: Assemble JavaScript into code variable.
   var code = 'start,';
   return code;
 };
 
 Blockly.JavaScript['end'] = function(block) {
-  // TODO: Assemble JavaScript into code variable.
   var code = 'end';
   return code;
 };
 
 Blockly.JavaScript['move_up'] = function(block) {
   var dropdown_steps = block.getFieldValue('Steps');
-  // TODO: Assemble JavaScript into code variable.
   dropdown_steps = parseInt(dropdown_steps);
   dropdown_steps+=1;
   var code = 'up='+dropdown_steps+",";
@@ -145,7 +142,6 @@ Blockly.JavaScript['move_up'] = function(block) {
 
 Blockly.JavaScript['move_down'] = function(block) {
   var dropdown_steps = block.getFieldValue('Steps');
-  // TODO: Assemble JavaScript into code variable.
   dropdown_steps = parseInt(dropdown_steps);
   dropdown_steps+=1;
   var code = 'down='+dropdown_steps+",";
@@ -154,7 +150,6 @@ Blockly.JavaScript['move_down'] = function(block) {
 
 Blockly.JavaScript['move_right'] = function(block) {
   var dropdown_steps = block.getFieldValue('Steps');
-  // TODO: Assemble JavaScript into code variable.
   dropdown_steps = parseInt(dropdown_steps);
   dropdown_steps+=1;
   var code = 'right='+dropdown_steps+",";
@@ -163,7 +158,6 @@ Blockly.JavaScript['move_right'] = function(block) {
 
 Blockly.JavaScript['move_left'] = function(block) {
   var dropdown_steps = block.getFieldValue('Steps');
-  // TODO: Assemble JavaScript into code variable.
   dropdown_steps = parseInt(dropdown_steps);
   dropdown_steps+=1;
   var code = 'left='+dropdown_steps+",";

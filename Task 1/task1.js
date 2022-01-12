@@ -57,7 +57,7 @@ $('#run').click(function(){
       isWon = false;
       break;
     }
-    console.log($.inArray(resultArray[i],validcells)===-1);
+    
     $('#'+resultArray[i-1]).addClass('hide');
     $('#'+resultArray[i]).removeClass('hide');
     if(resultArray[i]==55 && i==size-1){   // if the user wins
