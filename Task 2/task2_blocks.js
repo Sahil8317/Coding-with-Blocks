@@ -84,6 +84,11 @@ Blockly.JavaScript['loop'] = function(block) {
   var statements_do = Blockly.JavaScript.statementToCode(block, 'do');
   dropdown_times = parseInt(dropdown_times);
   dropdown_times+=1;
+  if(statements_do.split(",").length!=2 || statements_do.split(",")[1]==""){
+    alert("blocks are not connected!!");
+    location.reload();
+    return ;
+  }
   var code = 'loop='+dropdown_times+","+statements_do;
   return code;
 };
